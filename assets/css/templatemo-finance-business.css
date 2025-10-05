@@ -25,6 +25,9 @@ https://templatemo.com/tm-545-finance-business
 .logo{
 	height: 65px;
 }
+#logo-footer{
+	margin-bottom: 20px;
+}
 
 .logo-container a:hover,.logo:hover{
 	transform: scale(1.25);
@@ -274,10 +277,10 @@ header {
 }
 
 header .navbar {
-	padding: 20px 0px;
+	padding: 20px 20px;
 }
 .background-header .navbar {
-	padding: 10px 0px;
+	padding: 20px 20px;
 }
 .background-header {
 	top: 0;
@@ -347,11 +350,11 @@ header .navbar {
 	border-bottom: 3px solid var(--accent-2);
 }
 .navbar .navbar-toggler-icon {
-	background-image: none;
+	/* background-color: var(--accent-2) */
 }
 .navbar .navbar-toggler {
-	border-color: var(--light);
-	background-color: var(--light);	
+	/* border-color: var(--light); */
+	background-color:none;	
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
@@ -361,7 +364,7 @@ header .navbar {
 }
 .navbar .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: var(--accent);
+	color: var(--accent-2);
 	font-size: 18px;
 	line-height: 26px;
 	font-family: 'FontAwesome';
@@ -376,13 +379,14 @@ header .navbar {
   display: block;
   overflow: hidden;
   position: relative;
-  text-align: center
+  text-align: center;
+  background-attachment:fixed;
 }
 
 .img-fill img {
   min-height: 100%;
   min-width: 100%;
-  position: relative;
+  position: fixed;
   display: inline-block;
   max-width: none;
 }
@@ -417,11 +421,13 @@ header .navbar {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	height:95vh;
+	height:100vh;
 }
 
 .Modern-Slider .item-1 .img-fill {
 	background-image: url(../images/slide_01.jpg);
+	background-attachment: fixed;
+
 }
 
 .Modern-Slider .item-2 .img-fill {
@@ -800,15 +806,20 @@ ul.slick-dots {
 
 
 /* Call Back Style */
-.callback-form{
+/* .callback-form{
 	margin-bottom: 50px;
+} */
+#callback-form-index{
+	margin-bottom: 150px;
+	margin-top: 150px;
+
 }
 .callback-form .filled-button{
 	background-color: var(--accent);
 }
 .callback-services {
 	border-top: 1px solid #eee;
-	padding-top: 140px;
+	/* padding-top: 140px; */
 }
 
 .contact-us {
@@ -821,9 +832,9 @@ ul.slick-dots {
 	padding: 0!important;
 }
 
-.callback-form {
-	margin-top: 140px;
-}
+/* .callback-form {
+	/* margin-top: 140px; 
+} */
 
 .callback-form .contact-form {
 	background-color: var(--accent);
@@ -1125,6 +1136,12 @@ footer .contact-form button.filled-button:hover {
 	background-size: cover;
 	padding: 230px 0px 150px 0px;
 	color: var(--light);
+	height: 100vh;
+	background-attachment: fixed;
+}
+#page-heading-contact{
+	background-image: url(../images/page-heading-bg-contact.jpg);
+
 }
 
 .page-heading h1 {
@@ -1259,7 +1276,9 @@ footer .contact-form button.filled-button:hover {
 /* Contact Information */
 
 .contact-information {
-	margin-top: 140px;
+	padding-top: 40px;
+	padding-bottom: 140px;
+	background-color: var(--dark);
 }
 
 .contact-information .contact-item {
